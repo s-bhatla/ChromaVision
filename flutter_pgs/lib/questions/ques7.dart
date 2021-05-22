@@ -53,7 +53,7 @@ class Q7State extends State<Q7>{
                       content: Text("Incorrect. The number was 5"),
                     ));
                   }
-                  else if (cb[0] > cb[1]){
+                  if (cb[0] > cb[1]){
                     print("red-green");
                     Navigator.of(context)
                         .push(
@@ -67,7 +67,7 @@ class Q7State extends State<Q7>{
                         MaterialPageRoute(builder: (context) => HomePageby())
                     );
                   }
-                  else if (cb[1] == cb[0] && cb[1] > 1){
+                  else if (cb[1] >= 3 && cb[0] >= 3){
                     print("Black and white");
                     Navigator.of(context)
                         .push(

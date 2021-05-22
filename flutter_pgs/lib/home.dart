@@ -9,11 +9,11 @@ class Home extends StatelessWidget {
       body: Container(
       decoration: new BoxDecoration(color: Color(0xFF8CFFFF)),
       child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(8.0, 64.0, 8.0, 16.0),
+              padding: const EdgeInsets.fromLTRB(8.0, 32.0, 8.0, 16.0),
               child: Center(
                 child: Container(
                   constraints: BoxConstraints.expand(
