@@ -53,28 +53,28 @@ class Q7State extends State<Q7>{
                       content: Text("Incorrect. The number was 5"),
                     ));
                   }
-                  if (cb[0] > cb[1]){
+                  else if (cb[0] > cb[1]){
                     print("red-green");
                     Navigator.of(context)
                         .push(
                         MaterialPageRoute(builder: (context) => HomePagerg())
                     );
                   }
-                  if (cb[1] > cb[0]){
+                  else if (cb[1] > cb[0]){
                     print("blue-yellow");
                     Navigator.of(context)
                         .push(
                         MaterialPageRoute(builder: (context) => HomePageby())
                     );
                   }
-                  if (cb[1] == cb[0] && cb[1] > 1){
+                  else if (cb[1] == cb[0] && cb[1] > 1){
                     print("Black and white");
                     Navigator.of(context)
                         .push(
                         MaterialPageRoute(builder: (context) => HomePagebw())
                     );
                   }
-                  if (cb[1] == cb[0] && cb[1] == 1){
+                  else if (cb[1] == cb[0] && cb[1] == 1){
                     Navigator.of(context)
                         .push(
                         MaterialPageRoute(builder: (context) => Err())
